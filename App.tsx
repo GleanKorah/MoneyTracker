@@ -1,3 +1,4 @@
+/*
 //import {StyleSheet} from 'react-native';
 import React from 'react';
 import SplashScreen from './src/pages/SplashScreen';
@@ -23,7 +24,8 @@ const App = () => {
 export default App;
 
 // const styles = StyleSheet.create({});
-/*
+*/
+
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import Router from './src/router';
@@ -37,4 +39,3 @@ const App = () => {
 };
 
 export default App;
-*/

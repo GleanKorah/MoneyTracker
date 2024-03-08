@@ -2,7 +2,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import React, {useEffect} from 'react';
 import Logo from '../../assets/icon/Logo.svg';
 
-const SplashScreen = ({navigation}: {navigation: any}) => {
+const SplashScreen = ({navigation}) => {
   useEffect(() => {
     setTimeout(() => {
       navigation.replace('SignIn');
@@ -12,7 +12,7 @@ const SplashScreen = ({navigation}: {navigation: any}) => {
   return (
     <View style={styles.container}>
       <Logo />
-      <Text style={styles.text}>Money Tracker</Text>
+      <Text style={styles.text}>Money Trackerrr</Text>
     </View>
   );
 };
