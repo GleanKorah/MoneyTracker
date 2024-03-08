@@ -1,11 +1,40 @@
-import {StyleSheet} from 'react-native';
+//import {StyleSheet} from 'react-native';
 import React from 'react';
 import SplashScreen from './src/pages/SplashScreen';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+
+const Stack = createNativeStackNavigator();
 
 const App = () => {
-  return <SplashScreen />;
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="SplashScreen"
+          component={SplashScreen}
+          options={{headerShown: false}}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 };
 
 export default App;
 
-const styles = StyleSheet.create({});
+// const styles = StyleSheet.create({});
+/*
+import {NavigationContainer} from '@react-navigation/native';
+import React from 'react';
+import Router from './src/router';
+
+const App = () => {
+  return (
+    <NavigationContainer>
+      <Router />
+    </NavigationContainer>
+  );
+};
+
+export default App;
+*/
